@@ -1,9 +1,9 @@
 /* Define color variables */
 :root {
     --background-color: #333;
-    --text-color: #fff;
+    --text-color: #a64d79;
     --link-color: #000;
-    --link-background-color: #fff;
+    --link-background-color: #a64d79;
     --section-background-color-1: #f9f9f9;
     --section-background-color-2: #f0f0f0;
     --list-item-background-color: #f4f4f4;
