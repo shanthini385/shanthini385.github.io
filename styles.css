@@ -1,140 +1,36 @@
-/* Define color variables */
-:root {
-    --background-color: #333;
-    --text-color: #a64d79;
-    --link-color: #000;
-    --link-background-color: #a64d79;
-    --section-background-color-1: #f9f9f9;
-    --section-background-color-2: #f0f0f0;
-    --list-item-background-color: #f4f4f4;
-}
-
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    padding-bottom: 50px; /* To prevent footer overlap */
-    background-color: var(--section-background-color-1);
 }
 
-/* Header Styling */
-header {
-    background: var(--background-color);
-    color: var(--text-color);
-    padding: 1rem 0;
-    text-align: center;
+.section {
+    padding: 20px;
+    margin: 10px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+#header {
+    background-color: #f0f0f0;
 }
 
-/* Navigation Menu */
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+#content {
+    background-color: #e0e0e0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+#footer {
+    background-color: #d0d0d0;
 }
 
-nav ul li a {
-    color: var(--link-color); /* Change link color to black */
-    text-decoration: none;
-    background: var(--link-background-color); /* Background color to make the text visible */
-    padding: 10px 20px; /* Changed padding */
-    border-radius: 10px; /* Changed border-radius */
-    border: 2px solid var(--link-color); /* Added border */
-    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-    background: var(--link-color);
-    color: var(--link-background-color);
-}
-
-/* Section Styling */
-section {
-    padding: 2rem 5%;
-}
-
-section h2 {
-    margin-top: 0;
-}
-
-/* Class for section titles */
-.section-title {
-    color: var(--background-color);
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-div#about, div#contact {
-    background: var(--section-background-color-1);
-}
-
-div#motivations {
-    background: var(--section-background-color-2);
-}
-
-/* Profile Image Styling */
-.profile-image {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    max-width: 150px;
+.section img {
+    max-width: 100%;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 5px solid var(--background-color); /* Added border */
-    padding: 10px; /* Added padding */
 }
 
-/* List Styling */
-ul {
-    list-style: none;
-    padding: 0;
+a {
+    color: blue;
+    text-decoration: none;
 }
 
-ul li {
-    background: var(--list-item-background-color);
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-}
-
-/* Footer Styling */
-footer#main-footer {
-    background: var(--background-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    section {
-        padding: 1rem 2%;
-    }
+a:hover {
+    color: red;
 }
