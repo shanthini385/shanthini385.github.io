@@ -48,8 +48,9 @@ nav ul li a {
     color: var(--link-color); /* Change link color to black */
     text-decoration: none;
     background: var(--link-background-color); /* Background color to make the text visible */
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 10px 20px; /* Changed padding */
+    border-radius: 10px; /* Changed border-radius */
+    border: 2px solid var(--link-color); /* Added border */
     transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
@@ -68,11 +69,18 @@ section h2 {
     margin-top: 0;
 }
 
-section#about, section#contact {
+/* Class for section titles */
+.section-title {
+    color: var(--background-color);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+div#about, div#contact {
     background: var(--section-background-color-1);
 }
 
-section#motivations {
+div#motivations {
     background: var(--section-background-color-2);
 }
 
@@ -84,6 +92,8 @@ section#motivations {
     max-width: 150px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid var(--background-color); /* Added border */
+    padding: 10px; /* Added padding */
 }
 
 /* List Styling */
@@ -99,7 +109,7 @@ ul li {
 }
 
 /* Footer Styling */
-footer {
+footer#main-footer {
     background: var(--background-color);
     color: var(--text-color);
     text-align: center;
