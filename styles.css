@@ -1,11 +1,14 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
     background-color: #0e3b43;
+    line-height: 1.6;
 }
 
+/* Header Navigation */
 header {
     background-color: #002a33;
     padding: 15px 20px;
@@ -47,13 +50,19 @@ header {
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: url('background-image.jpg') center/cover no-repeat;
+    background: linear-gradient(to bottom, #004d5c, #0e3b43);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Sections */
 section {
     padding: 40px 20px;
     margin: 20px auto;
@@ -62,6 +71,7 @@ section {
     border-radius: 8px;
 }
 
+/* Social Media Links */
 aside.social-links {
     position: fixed;
     top: 50%;
@@ -76,8 +86,10 @@ aside.social-links a {
     color: #ff9494;
     text-decoration: none;
     font-size: 18px;
+    text-align: center;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
