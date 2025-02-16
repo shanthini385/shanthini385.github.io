@@ -1,100 +1,73 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
-    background-color: #0e3b43;
-    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header Navigation */
 header {
-    background-color: #002a33;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
 }
 
-.logo {
-    font-size: 24px;
-    color: #fff;
-    margin: 0;
-}
-
-.top-nav ul {
+nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-    display: flex;
+    text-align: center;
+    background: #444;
 }
 
-.top-nav ul li {
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-.top-nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
-.download-cv {
-    color: #ff9494;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li a.active {
+    background: #666;
+    border-radius: 5px;
 }
 
-/* Hero Section */
-.hero {
+.tab-content {
+    display: none;
+    padding: 40px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h2 {
+    color: #222;
+}
+
+.social-icons {
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to bottom, #004d5c, #0e3b43);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px;
 }
 
-/* Sections */
-section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background-color: #004d5c;
-    border-radius: 8px;
-}
-
-/* Social Media Links */
-aside.social-links {
-    position: fixed;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-}
-
-aside.social-links a {
-    margin: 10px 0;
-    color: #ff9494;
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #222;
     text-decoration: none;
-    font-size: 18px;
-    text-align: center;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #002a33;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background: #222;
+    color: white;
 }
