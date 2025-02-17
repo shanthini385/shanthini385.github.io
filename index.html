@@ -10,21 +10,22 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #EEE2DC; /* Light background */
+      color: #123C69; /* Dark blue for text */
     }
     .container {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
-      background: #fff;
+      background: #FFFFFF; /* White container background */
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
     }
     h1, h2, h3 {
-      color: #333;
+      color: #AC3B61; /* Dark pink for headings */
     }
     a {
-      color: #0077b5;
+      color: #123C69; /* Dark blue for links */
       text-decoration: none;
     }
     a:hover {
@@ -37,14 +38,18 @@
     }
     .tab-button {
       padding: 10px 20px;
-      background: #0077b5;
-      color: #fff;
+      background: #AC3B61; /* Dark pink for buttons */
+      color: #FFFFFF; /* White text */
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
     .tab-button.active {
-      background: #005f8a;
+      background: #8A2A4A; /* Darker pink for active button */
+    }
+    .tab-button:hover {
+      background: #8A2A4A; /* Darker pink on hover */
     }
     .tab-content {
       display: none;
@@ -58,40 +63,40 @@
       gap: 10px;
       margin-top: 20px;
       padding: 10px;
-      background: #f4f4f4;
-      border-top: 1px solid #ddd;
+      background: #BAB2B5; /* Light gray for footer */
+      border-top: 1px solid #AC3B61; /* Dark pink border */
+      border-radius: 8px;
     }
     .social-icons img {
       width: 24px;
       height: 24px;
     }
-    .skills {
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px 0;
+      border: 4px solid #AC3B61; /* Dark pink border */
+    }
+    .about-section {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
+      align-items: center;
+      gap: 20px;
     }
-    .skill {
-      background: #0077b5;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 14px;
+    .about-text {
+      flex: 1;
     }
-    .scroll-bar {
-      width: 100%;
-      background: #ddd;
-      border-radius: 5px;
-      overflow: hidden;
-      margin-top: 5px;
+    .skills-certifications ul {
+      list-style-type: none;
+      padding: 0;
     }
-    .scroll-bar div {
-      height: 10px;
-      background: #0077b5;
+    .skills-certifications ul li {
+      margin-bottom: 10px;
     }
-    .proficient { width: 90%; }
-    .intermediate { width: 70%; }
-    .basic { width: 50%; }
+    .skills-certifications h3 {
+      color: #AC3B61; /* Dark pink for subheadings */
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -103,13 +108,18 @@
         <button class="tab-button" data-tab="education">Education</button>
         <button class="tab-button" data-tab="experience">Professional Experience</button>
         <button class="tab-button" data-tab="projects">Projects</button>
-        <button class="tab-button" data-tab="skills">Skills</button>
+        <button class="tab-button" data-tab="skills">Skills & Certifications</button>
       </div>
     </header>
 
     <section id="about" class="tab-content active">
-      <h2>About</h2>
-      <p>Cloud DevOps Engineer with over 6 years of expertise in designing and deploying scalable, high-performance systems. Passionate about enabling engineering teams through automation, reliability best practices, and performance optimizations. Adept at debugging distributed systems, building self-healing applications, and driving architectural improvements.</p>
+      <div class="about-section">
+        <img src="https://via.placeholder.com/150" alt="Shanthini" class="profile-picture">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>Cloud DevOps Engineer with over 6 years of expertise in designing and deploying scalable, high-performance systems. Passionate about enabling engineering teams through automation, reliability best practices, and performance optimizations. Adept at debugging distributed systems, building self-healing applications, and driving architectural improvements.</p>
+        </div>
+      </div>
     </section>
 
     <section id="education" class="tab-content">
@@ -174,28 +184,20 @@
     </section>
 
     <section id="skills" class="tab-content">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill">Microsoft Azure <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Amazon Web Services (AWS) <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Kubernetes <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Docker <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Terraform <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">Jenkins <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">GitLab CI/CD <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Git <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Ansible <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">Microservices <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Bitbucket <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">New Relic <div class="scroll-bar"><div class="basic"></div></div></div>
-        <div class="skill">Splunk <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">Python <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">Bash <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">PowerShell <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">YAML <div class="scroll-bar"><div class="proficient"></div></div></div>
-        <div class="skill">MySQL <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">PostgreSQL <div class="scroll-bar"><div class="intermediate"></div></div></div>
-        <div class="skill">MongoDB <div class="scroll-bar"><div class="basic"></div></div></div>
+      <h2>Skills & Certifications</h2>
+      <div class="skills-certifications">
+        <h3>TECHNICAL SKILLS</h3>
+        <ul>
+          <li><strong>Cloud Platforms:</strong> Microsoft Azure, Amazon Web Services (AWS)</li>
+          <li><strong>DevOps & CI/CD:</strong> Kubernetes, Docker, Terraform, Jenkins, GitLab CI/CD, Git, Ansible, Microservices, Bitbucket, New Relic, Splunk</li>
+          <li><strong>Programming & Scripting:</strong> Python, Bash, PowerShell, YAML</li>
+          <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+        </ul>
+        <h3>CERTIFICATIONS</h3>
+        <ul>
+          <li>Microsoft Azure Fundamentals AZ900, Microsoft - Jan 2025</li>
+          <li>Certified Kubernetes Application Developer (CKAD), Cloud Native Computing Foundation - Aug 2023</li>
+        </ul>
       </div>
     </section>
 
